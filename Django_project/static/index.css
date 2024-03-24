@@ -1,2 +1,58 @@
 body { background: #F4F2F0;
 }
+
+h1 {
+    color: #6D4534;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    color: #6D4534;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: #6D4534;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.descricao {
+    color: #6D4534;
+    font-size: large;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 70px;
+    background-color: #999;
+    .rodape {
+        padding-top: 10px;
+        display: flex;
+        margin: auto;
+        width: 30%;
+        font-family: fantasy;
+    }
+}

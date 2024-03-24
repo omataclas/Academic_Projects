@@ -2,12 +2,12 @@
 
 [x]	Crie um novo aplicativo dentro do projeto.
 
-[]	Crie uma view que renderize uma página HTML simples, contendo pelo 	menos um título, um subtítulo e um parágrafo de texto. Atenção à 	formatação da página.
+[x]	Crie uma view que renderize uma página HTML simples, contendo pelo 	menos um título, um subtítulo e um parágrafo de texto. Atenção à formatação da página.
 
-[]	Insira imagens no seu projeto.
+[x]	Insira imagens no seu projeto.
 
-[]	Crie um arquivo CSS separado para estilizar a página. Adicione 	estilos como fonte, cor de fundo, cor do texto e margens.
+[x]	Crie um arquivo CSS separado para estilizar a página. Adicione estilos como fonte, cor de fundo, cor do texto e margens.
 
-[]	Configure a URL da sua view para que ela seja acessível em um 	endereço específico (por exemplo, localhost:8000/mypage).
+[x]	Configure a URL da sua view para que ela seja acessível em um endereço específico (por exemplo, localhost:8000/mypage).
 
-[]	Verifique se a página está sendo exibida corretamente no 	navegador.
+[x]	Verifique se a página está sendo exibida corretamente no navegador.
