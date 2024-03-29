@@ -1,46 +1,59 @@
-body { background: #F4F2F0;
-}
+body { background: white;
+}  /* #0774BC FAESA BLUE */
 
 h1 {
-    color: #6D4534;
-    font-family: fantasy;
+    color: #0774BC;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-h3 {
-    color: #6D4534;
-    font-family: fantasy;
+.container{
+    width: 1150px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
     text-align: center;
 }
 
-a {
-    color: #6D4534;
-    font-size: x-large;
-    font-family: fantasy;
+.container .card a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0774BC;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.container .card:hover{
+    background-color: antiquewhite;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #999;
+    border-color: antiquewhite;
 }
 
-.descricao {
-    color: #6D4534;
-    font-size: large;
-    font-family: fantasy;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container .card a:hover{
+    filter: invert(1);
 }
-
 
 footer {
     width: 100%;
@@ -52,7 +65,7 @@ footer {
         padding-top: 10px;
         display: flex;
         margin: auto;
-        width: 30%;
+        width: max-content;
         font-family: fantasy;
     }
 }

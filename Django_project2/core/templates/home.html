@@ -3,48 +3,77 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Cursos EAD</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static '/index.css' %}">
     </head>
     <body>
-        <h1>Django é Popular</h1>
-        <h3>O web-framwork Django é usado por sites muito populares, como:</h3>
-        <nav>
-            <ul>
-                <li>
-                    <a>Instagram</a>
-                </li>
-                <img src="{% static '/images/instagram.png' %}" alt="Instagram">
-                <li>
-                    <a>Youtube</a>
-                </li>
-                <img src="{% static '/images/youtube.png' %}" alt="Youtube">
-                <li>
-                    <a>Spotify</a>
-                </li>
-                <img src="{% static '/images/spotify.png' %}" alt="Spotify">
-                <li>
-                    <a>DropBox</a>
-                </li>
-                <img src="{% static '/images/dropbox.png' %}" alt="DropBox">
-                <li>
-                    <a>Pinterest</a>
-                </li>
-                <img src="{% static '/images/pinterest.png' %}" alt="Pinterest">
-            </ul>
-        </nav>
+        <h1>Conheça nossos cursos EAD na área da Tecnologia da Informação</h1>
 
-        <p class="descricao">
-            Django tornou se um projeto de código aberto após ser criado como um sistema para gerenciar um 
-            site jornalístico na cidade de Lawrence, no Kansas. Hoje, o Django é um framework para desenvolvimento 
-            rápido para web, escrito em Python e utilizando o padrão model-template-view.
-        </p>
-
+        <div class="container">
+            <div class="card">
+                <h5>Tecnólogo</h5>
+                <h2>Análise e Desenvolvimento de Sistemas EAD</h2>
+                <p>
+                    Os profissionais formados em 
+                    Análise e Desenvolvimento de Sistemas 
+                    projetam e desenvolvem soluções tecnológicas, 
+                    impulsionando a inovação e a transformação digital.
+                </p>
+                <ul>
+                    <li>Duração: 2,5 anos</li>
+                    <li>Aulas 100% online</li>
+                    <li>Provas presenciais</li>
+                    <li>Certificado aprovado pelo MEC</li>
+                </ul>
+                <a href="https://ead.faesa.br/cursos-graduacao/analise-desenvolvimento-ead"> Saiba mais</a>
+            </div>
+            <div class="card">
+                <h5>Bacharelado</h5>
+                <h2>Sistemas de Informação EAD</h2>
+                <p>
+                    Os profissionais formados em 
+                    Sistemas de Informação são 
+                    especialistas em gestão e 
+                    desenvolvimento de sistemas, 
+                    atuando como ponte entre a tecnologia 
+                    e as necessidades das organizações.
+                </p>
+                <ul>
+                    <li>Duração: 4 anos</li>
+                    <li>Aulas 100% online</li>
+                    <li>Provas presenciais</li>
+                    <li>Certificado aprovado pelo MEC</li>
+                </ul>
+                <a href="https://ead.faesa.br/cursos-graduacao/sistemas-informacao-ead"> Saiba mais</a>
+            </div>
+            <div class="card">
+                <h5>Tecnólogo</h5>
+                <h2>Redes de Computadores EAD</h2>
+                <p>
+                    Os profissionais formados em 
+                    Redes de Computadores são 
+                    especialistas em planejamento, 
+                    implantação e manutenção de 
+                    redes de comunicação, garantindo 
+                    a conexão e a segurança dos sistemas
+                    de informação, impulsionando a 
+                    comunicação e o compartilhamento de dados.
+                </p>
+                <ul>
+                    <li>Duração: 2,5 anos</li>
+                    <li>Aulas 100% online</li>
+                    <li>Provas presenciais</li>
+                    <li>Certificado aprovado pelo MEC</li>
+                </ul>
+                <a href="https://ead.faesa.br/cursos-graduacao/redes-computadores-ead"> Saiba mais</a>
+            </div>
+        </div>
         <footer>
             <div class="rodape">
-                <p>Arthur Sabadin Oliveira/ADS/Programação_Back-end</p>
+                <img src="{% static '/images/faesa.png' %}">
+                <p>Fale conosco. Whatsapp: (27) 999824 - 9044</p>
             </div>
         </footer>
     </body>
