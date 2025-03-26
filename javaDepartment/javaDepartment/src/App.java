@@ -8,30 +8,32 @@ public class App {
       
       Scanner teclado = new Scanner(System.in);
 
-      System.out.println("Pressione 'C' Para Criar uma tarefa. ");
-      System.out.println("Pressione 'L' Para Listar todas as tarefas. ");
-      System.out.println("Pressione 'X' Para encerrar o programa. ");
-      String comando = teclado.nextLine();
-      
       while (i == true) {
-      if (comando.equals("c") || comando.equals("C")) {
-        Tarefa tar1 = new Tarefa();
-        System.out.println("Insira o nome da Tarefa: ");
-        String tarNome = teclado.nextLine();
-        tar1.setNomeDep(tarNome);
-        tarefas.insert(tar1); // <- change - objectifiy
+      
+        System.out.println("Pressione 'C' Para Criar uma tarefa. ");
+        System.out.println("Pressione 'L' Para Listar todas as tarefas. ");
+        System.out.println("Pressione 'X' Para encerrar o programa. ");
+        String comando = teclado.nextLine();
+      
+      
+        if (comando.equals("c") || comando.equals("C")) {
+          Tarefa tar1 = new Tarefa();
+          System.out.println("Insira o nome da Tarefa: ");
+          String tarNome = teclado.nextLine();
+          tar1.setNomeTar(tarNome);
+          tarefas.insert(tar1);
         
-      } if (comando.equals("l") || comando.equals("L")) {
-        // listar
+        } else if (comando.equals("l") || comando.equals("L")) {
+            tarefas.printArray(); // is not recieving teclado String
 
-      } if (comando.equals("x") || comando.equals("X")) {
-        System.out.println("Encerrando programa! ");
-        i = false;
+        } else if (comando.equals("x") || comando.equals("X")) {
+          System.out.println("Encerrando programa! ");
+          i = false;
 
-      } else {
-        System.out.println("Comando Inválido, Encerrando programa! ");
-        i = false;
-      }
+        } else {
+          System.out.println("Comando Inválido, Encerrando programa! ");
+          i = false;
+        }
     }
       
       teclado.close();

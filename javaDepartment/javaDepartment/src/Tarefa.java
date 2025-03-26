@@ -1,6 +1,6 @@
 public class Tarefa extends Departamento{
     
-    private String nomeTar;
+    public String nomeTar;
 
     public void setNomeTar(String newNomeTar){
         this.nomeTar = newNomeTar;
