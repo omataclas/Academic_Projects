@@ -1,4 +1,4 @@
-public class Tarefa extends Departamento{
+public class Tarefa extends Departamento{ // CRIAÇÃO DA SUBCLASSE
     
     public String nomeTar;
 
@@ -20,4 +20,4 @@ public class Tarefa extends Departamento{
     public Boolean getIsCompleta(){
         return isCompleta;
     }
-}
+} // A SUBCLASSE TEM HERANÇA DA CLASSE DEPARTAMENTO E DA CLASSE INSTITUTO

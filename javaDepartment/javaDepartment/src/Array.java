@@ -1,37 +1,32 @@
 public class Array {
-    private Tarefa[] arr; // creates array of Tarefa objects
-    private int count; // counter for size of array
+    private Tarefa[] arr;
+    private int count;
 
-    // Constructor that recieves size param when instancing array object
     public Array(int size){
           arr = new Tarefa[size]; 
     }
 
-    // Method to print array
-    public void printArray(){ //ie. Array.printArray()
+    public void printArray(){
 
-        for (int i = 0; i < count; i++) {// sets a loop as big as array size
+        for (int i = 0; i < count; i++) {
             String nomeTarefa = (arr[i].getNomeTar());
-            System.out.println(nomeTarefa); //prints array items
+            System.out.println(nomeTarefa);
         }
     }
 
-    // Method to insert element in array
-    public void insert(Tarefa ele){ // i.e Array.insert("array item")
+    public void insert(Tarefa ele){
 
-        if (arr.length == count) { // checks if array is max size
+        if (arr.length == count) { 
 
-            // Creating a new array double the size
-            // of array declared above
+
             Tarefa newArr[] = new Tarefa[2 * count];
 
-            for (int i = 0; i < count; i++) // tranfering array items
+            for (int i = 0; i < count; i++)
                 newArr[i] = arr[i];
 
-            // Assigning new array to original array
             arr = newArr;
         }
 
-        arr[count++] = ele; // passes ele to arrays last place
+        arr[count++] = ele;
     }
 }

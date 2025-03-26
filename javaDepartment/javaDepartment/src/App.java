@@ -16,7 +16,7 @@ public class App {
         String comando = teclado.nextLine();
       
       
-        if (comando.equals("c") || comando.equals("C")) {
+        if (comando.equals("c") || comando.equals("C")) { // ESTRUTURA CONDICIONAL
           Tarefa tar1 = new Tarefa();
           System.out.println("Insira o nome da Tarefa: ");
           String tarNome = teclado.nextLine();
@@ -24,7 +24,7 @@ public class App {
           tarefas.insert(tar1);
         
         } else if (comando.equals("l") || comando.equals("L")) {
-            tarefas.printArray(); // is not recieving teclado String
+            tarefas.printArray();
 
         } else if (comando.equals("x") || comando.equals("X")) {
           System.out.println("Encerrando programa! ");
