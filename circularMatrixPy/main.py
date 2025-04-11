@@ -1,4 +1,3 @@
-
 class FilaMatrizCircular:
     # Cria uma fila vazia, utilizando a estrutura de uma matriz circular
     CAPACIDADE = 10  # limite de capacidade das filas novas
@@ -50,7 +49,6 @@ class FilaMatrizCircular:
             anda = (1 + anda) % len(antiga)  # usa o tamanho antigo como módulo
         self.frente = 0  # realinha a frente
 
-
 # Exemplo de uso da classe FilaMatrizCircular
 def exemplo_uso_fila():
     fila = FilaMatrizCircular()
@@ -73,7 +71,6 @@ def exemplo_uso_fila():
 
     # Tamanho da fila após remoções
     print("Atual tamanho da fila: " + str(len(fila)))  # Saída: 2
-
 
 # Chama a função de exemplo para testar o código
 exemplo_uso_fila()
