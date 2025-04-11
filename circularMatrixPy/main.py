@@ -56,22 +56,23 @@ def exemplo_uso_fila():
     fila = FilaMatrizCircular()
 
     # Adiciona elementos à fila
+    fila.enfilera(0)
+    fila.enfilera(9)
     fila.enfilera(1)
-    fila.enfilera(2)
-    fila.enfilera(3)
+    fila.enfilera(1)
 
     # Verifica se a fila está vazia
-    print(fila.estaVazia())  # Saída: False
+    print("A fila está vazia: " + str(fila.estaVazia()))  # Saída: False
 
     # Obtém o tamanho da fila
-    print(len(fila))  # Saída: 3
+    print("O tamanho da fila é: " + str(len(fila)))  # Saída: 4
 
     # Remove elementos da fila
-    print(fila.desenfileira())  # Saída: 1
-    print(fila.desenfileira())  # Saída: 2
+    print("Removendo o número: " + str(fila.desenfileira()))  # Saída: 0
+    print("Removendo o número: " + str(fila.desenfileira()))  # Saída: 9
 
     # Tamanho da fila após remoções
-    print(len(fila))  # Saída: 1
+    print("Atual tamanho da fila: " + str(len(fila)))  # Saída: 2
 
 
 # Chama a função de exemplo para testar o código
